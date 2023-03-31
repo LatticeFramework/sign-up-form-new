@@ -41,3 +41,27 @@ a {
     transition: all 0.5s;
     transform: translateY(-3.4rem);
 }
+
+.form-input {
+    border: 2px solid gray;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    width: 60%;
+    display: block;
+    transition: all 0.5s;
+    margin-top: 5%;
+    padding-right: 10%;
+}
+
+form-input:focus {
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
+
+.form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+}
