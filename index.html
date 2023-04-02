@@ -13,6 +13,9 @@
 </head>
 <body>
     <div class="img">
+        <div class="img-logo">
+            <img src="images/odin-lined.png" alt="Odin Logo" class="odin-img" />
+        </div>
         <div class="img-description">
             <p class="img-info">Photo</p>
             <a href="https://unsplash.com/photos/jNy1L0_iz7c">
@@ -56,8 +59,8 @@
             </div>
             <div class="inputs">
                 <div class="email">
-                    required
                     <input
+                      required
                       type="email"
                       class="form-input"
                       id="email"
@@ -99,8 +102,9 @@
                 </div>
             </div>
             <div class="form-end">
-            <button class="btn" type="submit">Create Account</button>
-            <h1>Already have an account? <a href="" class="login">Log in</a></h1>
+              <div class="errorMessage"></div>
+              <button class="btn" type="submit">Create Account</button>
+              <h1>Already have an account? <a href="" class="login">Log in</a></h1>
             </div>
         </form>
     </div>
