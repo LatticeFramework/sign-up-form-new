@@ -26,7 +26,7 @@ const submit = (e) => {
         return;
     }
     if (
-      !phone.value.match (
+      !phone.value.match(
         /(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})/
       )
     ) {
@@ -46,7 +46,7 @@ const submit = (e) => {
           "Password needs to have at least 1 lower case letter.";
         return;
     }
-    if (!password.value.match(/A-Z/)) {
+    if (!password.value.match(/[A-Z]/)) {
         password.classList.add("error");
           "Password needs to have at least 1 upper case letter.";
         return;
