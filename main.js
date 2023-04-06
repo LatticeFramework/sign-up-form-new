@@ -48,6 +48,7 @@ const submit = (e) => {
     }
     if (!password.value.match(/[A-Z]/)) {
         password.classList.add("error");
+        errorMessage.textContent =
           "Password needs to have at least 1 upper case letter.";
         return;
     }
