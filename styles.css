@@ -21,13 +21,34 @@ body {
     border-radius: 5px;
 }
 
+.img-logo {
+    width: 25%;
+    height: fit-content;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.178);
+    border: 2px solid green;
+    border-radius: 6px;
+}
+
+.odin-img {
+    width: 100%;
+}
+
 .img-description {
     margin-top: auto;
     margin-bottom: 10px;
-    font-size: 100%;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 80%;
     color: white;
     font-weight: 900;
     background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
 
 a {
@@ -74,8 +95,8 @@ a {
     padding-right: 10%;
 }
 
-form-input:focus {
-    transition: 0.2s;
+.form-input:focus {
+    transition: 1s;
     outline: none;
     border: 2px solid blue;
 }
@@ -86,15 +107,23 @@ form-input:focus {
 }
 
 form {
-    padding-top: 3%;
-    width: 80%;
-    margin-left: 0%;
-    background-color: rgba(0, 0, 0, 0.034);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 75px rgba(0,0,0,.1);
+}
+
+#form-h1 {
+    text-align: center;
 }
 
 .inputs {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 90%;
 }
 
@@ -103,8 +132,8 @@ form {
 }
 
 .form-end {
-    margin-top: 20px;
-    position: absolute;
+    margin-top: 50px;
+    position: static;
     font-size: 10px;
 }
 
@@ -116,7 +145,7 @@ form {
     border-radius: 6px;
     border: none;
     font-size: 30px;
-    background: #009900;
+    background: rgb(0, 153, 0);
     color: #dfdedf;
     user-select: none;
     -webkit-user-select: none;
@@ -144,14 +173,3 @@ form {
     color: red;
 }
 
-.img-logo {
-    width: 10%;
-    height: fit-content;
-    position: fixed;
-    margin-left: 28%;
-    background-color: rgba(0, 0, 0, 0.178);
-}
-
-.odin-img {
-    width: 100%;
-}
