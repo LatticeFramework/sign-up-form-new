@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norseBold;
+    src: url(Norse-Bold.otf);
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
@@ -10,6 +15,7 @@ body {
 
 .img {
     display: flex;
+    flex-direction: column;
     width: 40%;
     height: 96%;
     margin: 1% 1% 1% 1%;
@@ -22,19 +28,30 @@ body {
 }
 
 .img-logo {
-    width: 25%;
-    height: fit-content;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 38vw;
+    height: 20%;
+    margin-top: 30%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.178);
-    border: 2px solid green;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
 }
 
+.img-logo p {
+    font-size: 100px;
+    font-stretch: ultra-expanded;
+    font-weight: 1000;
+    color: white;
+    font-family: norseBold;
+}
+
 .odin-img {
-    width: 100%;
+    width: 15%;
 }
 
 .img-description {
@@ -48,7 +65,10 @@ body {
     color: white;
     font-weight: 900;
     background-color: rgb(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
+    height: 10vh;
+    width: 15vw;
 }
 
 a {
