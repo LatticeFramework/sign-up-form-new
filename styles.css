@@ -176,7 +176,7 @@ form {
 }
 
 .btn:hover {
-    outline: 0;
+    outline: 1;
 }
 
 .login {
@@ -191,5 +191,10 @@ form {
     font-size: 25px;
     font-weight: 900;
     color: red;
+}
+
+.input-title {
+    font-size: 100%;
+    font-weight: 1000;
 }
 
