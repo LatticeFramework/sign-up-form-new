@@ -2,9 +2,14 @@ const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm-password");
+const legion = document.querySelector("#legion");
+const guild = document.querySelector("#guild");
 const errorMessage = document.querySelector(".errorMessage");
 
-const inputs = [email, phone, password, confirmPassword];
+const inputTitle = document.querySelector(".input-title");
+const formLabel = document.querySelector(".form-label");
+
+const inputs = [email, phone, password, confirmPassword, legion, guild];
 
 inputs.forEach((item) => {
     item.addEventListener("focusin", () => {
@@ -14,6 +19,7 @@ inputs.forEach((item) => {
             password.classList.remove("error");
             confirmPassword.classList.remove("error");
         }
+        inputTitle.style.color = green;
     });
 });
 
@@ -57,6 +63,11 @@ const submit = (e) => {
         errorMessage.textContent = "Password needs to have at least 1 number.";
         return;
     }
+    if (!guild.value.includes("heroes")) {
+      guild.classList.add("error");
+      errorMessage.textContent = "Guild must be heroes, orcs, or elves";
+      return;
+  }
     errorMessage.textContent = "Form added successfully";
 };
 

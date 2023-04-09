@@ -98,7 +98,9 @@ a {
     font-size: 20px;
     display: block;
     transition: all 0.5s;
-    transform: translateY(-3.4rem);
+    transform: translateY(-4rem);
+    
+    color: rgba(0, 0, 0, 1);
 }
 
 .form-input {
@@ -122,8 +124,7 @@ a {
 }
 
 .form-input:placeholder-shown + .form-label {
-    opacity: 0;
-    visibility: hidden;
+    color: rgba(0,0,255,.5);
 }
 
 form {
@@ -194,7 +195,14 @@ form {
 }
 
 .input-title {
-    font-size: 100%;
-    font-weight: 1000;
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s;
+    color: rgba(0,0,0,0);
 }
 
+.form-input:placeholder-shown + .input-title {
+    opacity: 0;
+    visibility: hidden;
+}
