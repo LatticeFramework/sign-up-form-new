@@ -19,7 +19,6 @@ inputs.forEach((item) => {
             password.classList.remove("error");
             confirmPassword.classList.remove("error");
         }
-        inputTitle.style.color = green;
     });
 });
 
@@ -65,9 +64,9 @@ const submit = (e) => {
     }
     if (!guild.value.includes("heroes")) {
       guild.classList.add("error");
-      errorMessage.textContent = "Guild must be heroes, orcs, or elves";
+      errorMessage.textContent = "Guild must include hereoes.";
       return;
-  }
+    }
     errorMessage.textContent = "Form added successfully";
 };
 
